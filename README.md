@@ -1,3 +1,5 @@
+*ARM64 version by MCPlayNetwork*
+
 [![Logo](.web/docs/public/og-image.png)](https://gate.minekube.com)
 
 # The extensible Minecraft Proxy
