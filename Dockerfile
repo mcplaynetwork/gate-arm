@@ -14,7 +14,7 @@ COPY pkg ./pkg
 COPY gate.go ./
 
 # Build
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o gate gate.go
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -a -o gate gate.go
 
 # Move binary into final image
 FROM gcr.io/distroless/static-debian11 AS app
