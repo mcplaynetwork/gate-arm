@@ -81,6 +81,7 @@ jobs:
           push: true
           cache-from: type=registry,ref=${{ steps.image-ref.outputs.image_latest }}
           cache-to: type=inline
+          platforms: linux/arm64
           tags: |
             ${{ steps.image-ref.outputs.image }}
             ${{ steps.image-ref.outputs.image_latest }}
